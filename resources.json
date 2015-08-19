@@ -1,0 +1,22 @@
+{
+	"resources": [
+	{ "title":"CSS-Tricks" , "url":"https://css-tricks.com/" , "section":"css" , "keyword":"" , "iconUrl":""}
+	{ "title":"Javascripting" , "url":"https://www.javascripting.com/" , "section":"keyword" , "js":"" , "iconUrl":""}
+	{ "title":"Javascript Weekly" , "url":"http://javascriptweekly.com/" , "section":"js" , "keyword":"" , "iconUrl":""}
+	{ "title":"W3Schools Javascript Tutorial" , "url":"http://www.w3schools.com/js/default.asp" , "section":"js" , "keyword":"" , "iconUrl":""}
+	{ "title":"W3Schools CSSTutorial" , "url":"http://www.w3schools.com/css/default.asp" , "section":"css" , "keyword":"" , "iconUrl":""}
+	{ "title":"W3Schools HTMLTutorial" , "url":"http://www.w3schools.com/html/default.asp" , "section":"html" , "keyword":"" , "iconUrl":""}
+	{ "title":"W3Schools Jquery Tutorial" , "url":"http://www.w3schools.com/jquery/default.asp" , "section":"js" , "keyword":"" , "iconUrl":""}
+	{ "title":"Reddit Html" , "url":"https://www.reddit.com/r/html" , "section":"html" , "keyword":"" , "iconUrl":""}
+	{ "title":"Mozilla Developers Network HTML" , "url":"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" , "section":"html" , "keyword":"" , "iconUrl":""}
+	{ "title":"HTMLdog Tutorial" , "url":"http://htmldog.com/guides/html/beginner/" , "section":"html" , "keyword":"" , "iconUrl":""}
+	{ "title":"Reddit JavaScript" , "url":"https://www.reddit.com/r/javascript" , "section":"js" , "keyword":"" , "iconUrl":""}
+	{ "title":"Reddit CSS" , "url":"" , "section":"https://www.reddit.com/r/css" , "keyword":"css" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	]
+}
