@@ -1,0 +1,9 @@
+{
+	"resources": [
+	{ "title":"CSS-Tricks" , "url":"https://css-tricks.com/" , "section":"css" , "keyword":"" , "iconUrl":""}
+	{ "title":"Javascripting" , "url":"https://www.javascripting.com/" , "section":"keyword" , "js":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	{ "title":"" , "url":"" , "section":"" , "keyword":"" , "iconUrl":""}
+	]
+}
