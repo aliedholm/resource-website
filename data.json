@@ -16,14 +16,42 @@ var resources = [
 {
 	"title" : "Codyhouse",
 	"age" : "http://codyhouse.co/",
-	"section" : "html css js",
+	"section" : "html",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Codyhouse",
+	"age" : "http://codyhouse.co/",
+	"section" : "css",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Codyhouse",
+	"age" : "http://codyhouse.co/",
+	"section" : "js",
 	"keywords" : "",
 	"icon" : ""
 },
 {
 	"title" : "Codrops",
 	"age" : "http://tympanus.net/codrops/",
-	"section" : "html css js",
+	"section" : "html",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Codrops",
+	"age" : "http://tympanus.net/codrops/",
+	"section" : "css",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Codrops",
+	"age" : "http://tympanus.net/codrops/",
+	"section" : "js",
 	"keywords" : "",
 	"icon" : ""
 },
@@ -37,7 +65,14 @@ var resources = [
 {
 	"title" : "Can I Use",
 	"age" : "http://caniuse.com/",
-	"section" : "html css",
+	"section" : "html",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Can I Use",
+	"age" : "http://caniuse.com/",
+	"section" : "css",
 	"keywords" : "",
 	"icon" : ""
 },
@@ -107,7 +142,14 @@ var resources = [
 {
 	"title" : "Learn to Code HTML and CSS",
 	"age" : "http://learn.shayhowe.com/html-css/",
-	"section" : "html css",
+	"section" : "css",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Learn to Code HTML and CSS",
+	"age" : "http://learn.shayhowe.com/html-css/",
+	"section" : "html",
 	"keywords" : "",
 	"icon" : ""
 },
@@ -135,7 +177,21 @@ var resources = [
 {
 	"title" : "Code Academy",
 	"age" : "https://www.codecademy.com/",
-	"section" : "html css js",
+	"section" : "html",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Code Academy",
+	"age" : "https://www.codecademy.com/",
+	"section" : "css",
+	"keywords" : "",
+	"icon" : ""
+},
+{
+	"title" : "Code Academy",
+	"age" : "https://www.codecademy.com/",
+	"section" : "js",
 	"keywords" : "",
 	"icon" : ""
 },
@@ -145,90 +201,6 @@ var resources = [
 	"section" : "",
 	"keywords" : "",
 	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
-{
-	"title" : "",
-	"age" : "",
-	"section" : "",
-	"keywords" : "",
-	"icon" : ""
-},
+}
 
 ]
