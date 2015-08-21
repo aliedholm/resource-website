@@ -84,14 +84,14 @@ var resources = [
 	"icon" : ""
 },
 {
-	"title" : "W3Schools CSSTutorial",
+	"title" : "W3Schools CSS Tutorial",
 	"age" : "http://www.w3schools.com/css/default.asp",
 	"section" : "css",
 	"keywords" : "",
 	"icon" : ""
 },
 {
-	"title" : "W3Schools HTMLTutorial",
+	"title" : "W3Schools HTML Tutorial",
 	"age" : "http://www.w3schools.com/html/default.asp",
 	"section" : "html",
 	"keywords" : "",
