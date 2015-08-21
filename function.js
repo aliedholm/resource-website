@@ -1,8 +1,5 @@
 <!-- hide script from old browsers
 
-
-
-
 var html = new Array();
 var css = new Array();
 var js = new Array();
