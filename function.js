@@ -25,7 +25,7 @@ for (i=0; i < html.length; i++) {
 }
 document.write("<br />")
 
-document.write("<div id='css' class='alert alert-info' align='center'><a name='css'>CSS</a></div>");
+document.write("<div id='css' class='alert alert-warning' align='center'><a name='css'>CSS</a></div>");
 document.write("<div class='list-group'>");
 
 for (i=0; i < css.length; i++) {
