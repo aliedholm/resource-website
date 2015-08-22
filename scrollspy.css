@@ -1,0 +1,13 @@
+<style>
+  body {
+      position: relative;
+  }
+  .affix {
+      top: 20px;
+  }
+  @media screen and (max-width: 810px) {
+    #html, #css, #js  {
+        margin-left: 150px;
+    }
+  }
+  </style>
