@@ -17,7 +17,7 @@ for (i=0; i < resources.length; i++) {
 	}
 }
 
-document.write("<div class='alert alert-success' align='center'>HTML</div>");
+document.write("<div id='html' class='alert alert-success' align='center'><a name='html'>HTML</a></div>");
 document.write("<div class='list-group'>");
 
 for (i=0; i < html.length; i++) {
@@ -25,7 +25,7 @@ for (i=0; i < html.length; i++) {
 }
 document.write("<br />")
 
-document.write("<div class='alert alert-success' align='center'>CSS</div>");
+document.write("<div id='css' class='alert alert-info' align='center'><a name='css'>CSS</a></div>");
 document.write("<div class='list-group'>");
 
 for (i=0; i < css.length; i++) {
@@ -33,7 +33,7 @@ for (i=0; i < css.length; i++) {
 }
 document.write("<br />")
 
-document.write("<div class='alert alert-success' align='center'>JavaScript</div>");
+document.write("<div id='js' class='alert alert-danger' align='center'><a name='js'>JavaScript</a></div>");
 document.write("<div class='list-group'>");
 
 for (i=0; i < js.length; i++) {
