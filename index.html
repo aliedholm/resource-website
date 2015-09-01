@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="scrollspy.css">
+  <link rel="stylesheet" href="mystyle.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="sscroll.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="data.js"></script>
 </head>
@@ -14,8 +15,8 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-sm-12">
-			<div class="jumbotron" id="html">
+		<div class="col-xs-12">
+			<div class="jumbotron">
 			<h1>Web Development Resources</h1>
 			<p>HTML, CSS, and JavaScript</p>
 			</div>
@@ -24,14 +25,10 @@
 </div>
 <div class="container">
 	<div class="row">
-    	<nav class="col-sm-3" id="myScrollspy">
-    		<ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
-     		   	<li><a href="#html">HTML</a></li>
-        		<li><a href="#css">CSS</a></li>
-        		<li><a href="#js">JavaScript</a></li>
-  			</ul>
+    	<nav class="col-xs-3 col-sm-2 col-md-2" id="myScrollspy">
+    		<div id="navBar"></div>
 		</nav>
-		<div class="col-sm-9">
+		<div class="col-xs-9 col-sm-10 col-md-10" id="content">
 			<script src="function.js"></script>
 		</div>
 	</div>

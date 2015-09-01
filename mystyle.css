@@ -10,4 +10,12 @@
         margin-left: 150px;
     }
   }
+
+  img.icon {
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    valign: middle;
+  }
   </style>

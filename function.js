@@ -1,61 +1,82 @@
-<!-- hide script from old browsers
-
-var html = new Array();
-var css = new Array();
-var js = new Array();
-
-
-for (i=0; i < resources.length; i++) {
-	if (resources[i].section == "html") {
-		html.splice(html.length + 1, 0, resources[i]);
-	}
-	else if (resources[i].section =="css") {
-		css.splice(css.length + 1, 0, resources[i]);
-	}
-	else if (resources[i].section =="js") {
-		js.splice(js.length + 1, 0, resources[i]);
-	}
+//creating the data array that is going to contain all the organized data
+var data = [];
+//creating an array from only the unique sections in the resources object
+var sections = [];
+//retrieving the section of the page that is going to contain the content and storing in a variable
+var el = document.getElementById('content');
+//variable that will contain the frame of the information display
+var frame = '';
+//parses the resources file and extracts all unique section names to an array
+function sectionate() {
+  if (sections.indexOf(resources[i].section) == -1) {
+    sections.push(resources[i].section);
+  }
 }
-
-document.write("<div id='html' class='alert alert-success' align='center'><a name='html'>HTML</a></div>");
-document.write("<div class='list-group'>");
-
-for (i=0; i < html.length; i++) {
-	document.write("<a class='list-group-item' href='" + html[i].url + "'>" + html[i].title + "</a>");
+//calls the sectionate function for each item of the resources array
+for (var i=0; i<resources.length; i++) {
+  sectionate();
 }
-document.write("<br />")
-
-document.write("<div id='css' class='alert alert-warning' align='center'><a name='css'>CSS</a></div>");
-document.write("<div class='list-group'>");
-
-for (i=0; i < css.length; i++) {
-	document.write("<a class='list-group-item' href='" + css[i].url + "'>" + css[i].title + "</a>");
+//upper case each section name
+function upperCase() {
+  for (var n=0; n<sections.length; n++) {
+    sections[n] = sections[n].toUpperCase();
+  }
 }
-document.write("<br />")
-
-document.write("<div id='js' class='alert alert-danger' align='center'><a name='js'>JavaScript</a></div>");
-document.write("<div class='list-group'>");
-
-for (i=0; i < js.length; i++) {
-	document.write("<a class='list-group-item' href='" + js[i].url + "'>" + js[i].title + "</a>");
+//calling upperCase fcn
+upperCase();
+//each item in the sections is formatted and added to the frame variable for later writing to the page
+function arrayize() {
+  sections.sort();
+  for (var j=0; j<sections.length; j++) {
+    frame += "<div class='panel panel-default' id='" + sections[j] + "'><div class='panel-heading'>" + sections[j] + "</div></div>";
+  }
 }
-
-// end hiding script from old browsers -->
-
-
-// Smooth scrolling for anchor tags
-
-$(function() {
-       $('a[href*=#]:not([href=#])').click(function() {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-           var target = $(this.hash);
-           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-               scrollTop: target.offset().top
-             }, 1000);
-             return false;
-           }
-         }
-       });
-     });
+arrayize();
+//writing the frame var to the appropiate place in the page
+el.innerHTML = frame;
+//iterating over resources array and sections array and writing the information in the correct place on the page
+function categorize() {
+  for (var l=0; l<sections.length; l++) {
+    ell = document.getElementById(sections[l]);
+    for (var k=0; k<resources.length; k++) { 
+      if (sections[l] === resources[k].section.toUpperCase()) {
+      newEl = document.createElement('div');
+      newA = document.createElement('a');
+      if (resources[k].icon) {
+        newImg = document.createElement('img');
+        newImg.setAttribute('src', resources[k].icon);
+        newImg.setAttribute('class', 'icon');
+        newA.appendChild(newImg);
+      }
+      newA.setAttribute('href', resources[k].url);
+      newEl.className = 'panel-body';
+      newText = document.createTextNode(resources[k].title);
+      newA.appendChild(newText);
+      newEl.appendChild(newA);
+      ell.appendChild(newEl);
+      }
+    }
+  }
+}
+//calling the categorize function
+categorize();
+//generating the nav bar from sections array
+function navCreate() {
+  ell = document.getElementById("navBar");
+  newNav = document.createElement('ul');
+  newNav.setAttribute('class', 'nav nav-pills nav-stacked')
+  newNav.setAttribute('data-spy', 'affix')
+  newNav.setAttribute('data-offset-top', '245')
+  for (var h=0; h<sections.length; h++) {
+    newText = document.createTextNode(sections[h]);
+    newLi = document.createElement('li');
+    newLink = document.createElement('a');
+    newLink.setAttribute('href', "#" + sections[h]);
+    newLink.appendChild(newText)
+    newLi.appendChild(newLink);
+    newNav.appendChild(newLi);
+  }
+  ell.appendChild(newNav);
+}
+//calling the nav bar creation function
+navCreate();
