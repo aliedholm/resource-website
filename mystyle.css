@@ -23,4 +23,13 @@
     padding: 3px;
     font-size: 18px;
   }
+
+  div.list-item {
+    background-color: white;
+  }
+
+  div.section-head {
+    background-color: blue !important;
+    color: green !important;
+  }
   </style>

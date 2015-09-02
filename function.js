@@ -28,7 +28,7 @@ upperCase();
 function arrayize() {
   sections.sort();
   for (var j=0; j<sections.length; j++) {
-    frame += "<div class='panel panel-default' id='" + sections[j] + "'><div class='panel-heading'>" + sections[j] + "</div></div>";
+    frame += "<div class='panel panel-default' id='" + sections[j] + "'><div class='panel-heading section-head'>" + sections[j] + "</div></div>";
   }
 }
 arrayize();
@@ -49,7 +49,7 @@ function categorize() {
         newA.appendChild(newImg);
       }
       newA.setAttribute('href', resources[k].url);
-      newEl.className = 'panel-body';
+      newEl.className = 'panel-body list-item';
       newText = document.createTextNode(resources[k].title);
       newA.appendChild(newText);
       newEl.appendChild(newA);
