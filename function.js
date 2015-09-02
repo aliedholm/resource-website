@@ -68,13 +68,27 @@ function navCreate() {
   newNav.setAttribute('data-spy', 'affix')
   newNav.setAttribute('data-offset-top', '245')
   for (var h=0; h<sections.length; h++) {
-    newText = document.createTextNode(sections[h]);
+    newText = document.createTextNode(sections[h] + ' ');
     newLi = document.createElement('li');
     newLink = document.createElement('a');
+    newDiv = document.createElement('div');
     newLink.setAttribute('href', "#" + sections[h]);
     newLink.appendChild(newText)
-    newLi.appendChild(newLink);
+    newBadge = document.createElement('span');
+    newBadge.setAttribute('class', 'badge');
+    badgeCount = 0;
+    for (var i=0; i<resources.length; i++) {
+      if (resources[i].section.toUpperCase() === sections[h]) {
+        badgeCount++;
+      }
+    }
+    newBadgeB = document.createTextNode(badgeCount);
+    newBadge.appendChild(newBadgeB);
+    newDiv.appendChild(newLink);
+    newDiv.appendChild(newBadge);
+    newLi.appendChild(newDiv);
     newNav.appendChild(newLi);
+    newDiv.setAttribute('class', 'navBar');
   }
   ell.appendChild(newNav);
 }
