@@ -18,4 +18,9 @@
     padding-bottom: 3px;
     valign: middle;
   }
+
+  div.navBar {
+    padding: 3px;
+    font-size: 18px;
+  }
   </style>
