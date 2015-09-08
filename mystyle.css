@@ -29,7 +29,10 @@
   }
 
   div.section-head {
-    background-color: blue !important;
-    color: green !important;
+    background-color: white;
+    color: black;
+  }
+  div.fresh {
+    background-color: #CCD6CC !important;
   }
   </style>

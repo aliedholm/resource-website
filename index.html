@@ -19,20 +19,65 @@
 			<div class="jumbotron">
 			<h1>Web Development Resources</h1>
 			<p>HTML, CSS, and JavaScript</p>
+			<br />
+			<div align="right">
+			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Submit a Resource</button>
+			</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="container">
+<!-- modal dialog box below -->
+			<div id="myModal" class="modal fade" role="dialog">
+  				<div class="modal-dialog">
+  					<div class="modal-content">
+  						<div class="modal-header">
+  							<button type="button" class="close" data-dismiss="modal">&times;</button>
+  							<h4>Please enter new information for our website</h4>
+  						</div>
+  						<div class="modal-body">
+  						<form id="addResource">
+  							<div class="form-group">
+  								<label for="title">Title:</label>
+  								<input type="text" class="form-control" id="title">
+  							</div>
+  							<div class="form-group">
+  								<label for="url">URL:</label>
+  								<input type="text" class="form-control" id="url">
+  							</div>
+  							<div class="form-group">
+  								<label for="icon">Icon URL:</label>
+  								<input type="text" class="form-control" id="icon">
+  							</div>
+  							<div class="form-group">
+  								<label for="keyword">Keywords (Separated by a space):</label>
+  								<input type="text" class="form-control" id="keyword">
+  							</div>
+  							<div class="form-group">
+  								<label for="section">Type of Resource:</label>
+  								<input type="text" class="form-control" id="section">
+  							</div>
+  							</form>
+  						</div>
+  						<div class="modal-footer">
+  							<input type="submit" value="Submit" id="submitButton" data-dismiss="modal">
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+<!-- end of modal dialog box -->
 	<div class="row">
     	<nav class="col-xs-3 col-sm-2 col-md-2" id="myScrollspy">
-    		<div id="navBar"></div>
+    		<div id="navBar">
+    			<ul class="nav nav-pills nav-stacked affix-top" data-offset-top="300" data-spy="affix"></ul>
+    		</div>
 		</nav>
-		<div class="col-xs-9 col-sm-10 col-md-10" id="content">
-			<script src="function.js"></script>
+		<div class="col-xs-9 col-sm-10 col-md-10">
+			<div class="list"></div>
+			<script src="function3jQ.js"></script>
 		</div>
 	</div>
 </div>
-
 </body>
 </html>
